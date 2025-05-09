@@ -5,15 +5,15 @@ const Brands = () => {
   const brands = [
     { name: 'HP', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/150px-HP_logo_2012.svg.png' },
     { name: 'Dell', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/150px-Dell_Logo.svg.png' },
-    { name: 'Lenovo', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Lenovo_Logo_2015.svg/150px-Lenovo_Logo_2015.svg.png' },
+    { name: 'Lenovo', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Lenovo_%282015%29.svg/960px-Lenovo_%282015%29.svg.png' },
     { name: 'Asus', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/ASUS_Logo.svg/150px-ASUS_Logo.svg.png' },
     { name: 'Acer', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Acer_2011.svg/150px-Acer_2011.svg.png' },
     { name: 'Apple', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/150px-Apple_logo_black.svg.png' },
     { name: 'Samsung', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/150px-Samsung_Logo.svg.png' },
     { name: 'LG', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/LG_symbol.svg/150px-LG_symbol.svg.png' },
-    { name: 'Canon', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Canon_logo.svg/150px-Canon_logo.svg.png' },
-    { name: 'Epson', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Epson_logo.svg/150px-Epson_logo.svg.png' },
-    { name: 'Brother', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Brother_logotype.svg/150px-Brother_logotype.svg.png' },
+    { name: 'Canon', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Canon_wordmark.svg/960px-Canon_wordmark.svg.png' },
+    { name: 'Epson', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/EPSON-Logo.svg/577px-EPSON-Logo.svg.png' },
+    { name: 'Brother', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/Brother_Logo.png' },
     { name: 'Xiaomi', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Xiaomi_logo_%282021-%29.svg/150px-Xiaomi_logo_%282021-%29.svg.png' },
   ];
 

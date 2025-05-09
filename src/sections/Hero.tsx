@@ -51,7 +51,7 @@ const Hero = () => {
           />
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400">
-            Especialistas em Assistência Técnica
+            Assistência Técnica
           </h1>
           
           <h2 className="text-xl md:text-2xl text-gray-300 mb-8">
