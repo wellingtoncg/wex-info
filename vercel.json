@@ -8,7 +8,6 @@
       "source": "/os/:path*",
       "destination": "https://assist-tech-rouge.vercel.app/:path*"
     },
-    // ---- ADICIONE ESTAS DUAS REGRAS PARA OS ATIVOS ----
     {
       "source": "/WEX.png", // Para o caso específico da imagem WEX.png
       "destination": "https://assist-tech-rouge.vercel.app/WEX.png"
@@ -17,6 +16,5 @@
       "source": "/assets/:path*", // Para outros ativos gerados pelo Vite na pasta /assets
       "destination": "https://assist-tech-rouge.vercel.app/assets/:path*"
     }
-    // --------------------------------------------------
   ]
 }
