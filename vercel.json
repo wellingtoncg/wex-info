@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/os/:path*",
+        "destination": "https://assist-tech-rouge.vercel.app/:path*"
+      }
+    ]
+  }
