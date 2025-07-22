@@ -1,0 +1,74 @@
+/* Cores de fundo principal (preto fosco) */
+body {
+    background-color: #121212;
+    color: #ffffff; /* Cor do texto claro */
+}
+.container-card {
+    /* Fundo de seções (cinza muito escuro) */
+    background-color: #1e1e1e;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.text-secondary {
+    color: #8a8a8a; /* Texto secundário (cinza claro) */
+}
+.btn-primary {
+    /* Gradiente de roxo vibrante para azul médio para o botão "Visite Nosso Site" */
+    background: linear-gradient(90deg, #8f00ff 0%, #3a7dff 100%);
+    color: white;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-whatsapp {
+    background-color: #25D366; /* Verde WhatsApp (mantido para reconhecimento) */
+    color: white;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.btn-whatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.btn-waze {
+    /* Gradiente de azul claro e azul médio */
+    background: linear-gradient(90deg, #00c3ff 0%, #3a7dff 100%);
+    color: white;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.btn-waze:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.text-wexinfo-title {
+    color: #3a7dff; /* Azul médio para o título WexInfo */
+}
+
+/* Animações Personalizadas */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+}
