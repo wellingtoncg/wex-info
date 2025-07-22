@@ -33,8 +33,7 @@ const LinkBioPage: React.FC = () => {
             {/* Seção Onde Estamos */}
             {/* Reduzido o margin-bottom da seção de mb-5 para mb-4 */}
             <div className="w-full text-center mb-4">
-                {/* Reduzido o margin-bottom do título da seção de mb-3 para mb-2 */}
-                <h2 className="text-2xl font-semibold text-white mb-2">Onde Estamos</h2>
+               
 
                 {/* Loja 1 */}
                 {/* Reduzido o padding do card de p-3 para p-2 e margin-bottom de mb-3 para mb-2 */}
