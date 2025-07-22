@@ -5,11 +5,11 @@ import './LinkBioPage.css'; // Exemplo: crie este arquivo e cole o CSS do <style
 
 const LinkBioPage: React.FC = () => {
     return (
-        // Mantido o padding vertical do container principal para p-6 para não afetar a largura percebida
-        <div className="w-full max-w-md mx-auto rounded-xl shadow-lg p-6 flex flex-col items-center container-card">
+        // Reduzido o padding-top do container principal de pt-1 para pt-0.5, mantendo px-4 para largura
+        <div className="w-full max-w-md mx-auto rounded-xl shadow-lg pt-0.5 px-4 flex flex-col items-center container-card">
             {/* Logo da WexInfo - Caminho atualizado para /logo.png */}
-            {/* Reduzido o margin-bottom da logo de mb-6 para mb-5 */}
-            <img src="/logo.png" alt="Logo WexInfo" className="w-32 h-32 mb-5 rounded-full object-cover" />
+            {/* Reduzido o margin-bottom da logo de mb-5 para mb-4 */}
+            <img src="/logo.png" alt="Logo WexInfo" className="w-32 h-32 mb-4 rounded-full object-cover" />
             
             {/* Título "Assistência Técnica" com animação */}
             {/* Mantido o margin-bottom do título para mb-2 */}
