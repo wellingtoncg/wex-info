@@ -9,12 +9,16 @@
       "destination": "https://assist-tech-rouge.vercel.app/:path*"
     },
     {
-      "source": "/WEX.png", 
+      "source": "/WEX.png",
       "destination": "https://assist-tech-rouge.vercel.app/WEX.png"
     },
     {
       "source": "/assets/:path*",
       "destination": "https://assist-tech-rouge.vercel.app/assets/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
     }
   ]
 }
