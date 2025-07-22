@@ -5,41 +5,52 @@ import './LinkBioPage.css'; // Exemplo: crie este arquivo e cole o CSS do <style
 
 const LinkBioPage: React.FC = () => {
     return (
+        // Mantido o padding vertical do container principal para p-6 para não afetar a largura percebida
         <div className="w-full max-w-md mx-auto rounded-xl shadow-lg p-6 flex flex-col items-center container-card">
             {/* Logo da WexInfo - Caminho atualizado para /logo.png */}
-            <img src="/logo.png" alt="Logo WexInfo" className="w-32 h-32 mb-6 rounded-full object-cover" />
+            {/* Reduzido o margin-bottom da logo de mb-6 para mb-5 */}
+            <img src="/logo.png" alt="Logo WexInfo" className="w-32 h-32 mb-5 rounded-full object-cover" />
             
             {/* Título "Assistência Técnica" com animação */}
+            {/* Mantido o margin-bottom do título para mb-2 */}
             <h1 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-fadeInUp">
                 Assistência Técnica
             </h1>
 
             {/* Descrição "Qualidade e excelência!" com animação */}
-            <p className="text-secondary text-lg mb-8 text-center animate-fadeIn" style={{ animationDelay: '0.5s' }}>Qualidade e excelência!</p>
+            {/* Reduzido o margin-bottom da descrição de mb-8 para mb-6 */}
+            <p className="text-secondary text-lg mb-6 text-center animate-fadeIn" style={{ animationDelay: '0.5s' }}>Qualidade e excelência!</p>
 
             {/* Botão para o Site com gradiente WEX */}
+            {/* Reduzido o padding vertical do botão de py-3 para py-2 e margin-bottom de mb-4 para mb-3 */}
             <a href="https://www.wexinfo.com.br" target="_blank"
-            className="w-full text-center py-3 px-6 rounded-lg font-semibold text-lg mb-4 shadow-md 
+            className="w-full text-center py-2 px-6 rounded-lg font-semibold text-lg mb-3 shadow-md 
                     text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:brightness-110 transition">
             Visite Nosso Site
             </a>
 
 
             {/* Seção Onde Estamos */}
-            <div className="w-full text-center mb-6">
-                <h2 className="text-2xl font-semibold text-white mb-4">Onde Estamos</h2>
+            {/* Reduzido o margin-bottom da seção de mb-6 para mb-5 */}
+            <div className="w-full text-center mb-5">
+                {/* Reduzido o margin-bottom do título da seção de mb-4 para mb-3 */}
+                <h2 className="text-2xl font-semibold text-white mb-3">Onde Estamos</h2>
 
                 {/* Loja 1 */}
-                <div className="p-4 rounded-lg mb-4 shadow-md container-card">
+                {/* Reduzido o padding do card de p-4 para p-3 e margin-bottom de mb-4 para mb-3 */}
+                <div className="p-3 rounded-lg mb-3 shadow-md store-card"> {/* Classe alterada para store-card */}
                     <h3 className="text-xl font-bold text-white mb-2 inline-flex items-center">
                         <Monitor size={24} className="mr-2" /> {/* Ícone de computador do Lucide React */}
                         Loja 1
                     </h3>
-                    <p className="text-secondary text-base mb-3">Estrada de Belém, 207, Encruzilhada, Recife - PE</p>
-                    <a href="https://wa.me/5581985786235" target="_blank" className="w-full btn-whatsapp text-center py-2 px-4 rounded-lg font-semibold text-base shadow-md inline-flex items-center justify-center mb-2">
+                    {/* Reduzido o margin-bottom do endereço de mb-3 para mb-2 */}
+                    <p className="text-secondary text-base mb-2">Estrada de Belém, 207, Encruzilhada, Recife - PE</p>
+                    {/* Mantido o padding vertical dos botões para py-2 e reduzido margin-bottom de mb-2 para mb-1 */}
+                    <a href="https://wa.me/5581985786235" target="_blank" className="w-full btn-whatsapp text-center py-2 px-4 rounded-lg font-semibold text-base shadow-md inline-flex items-center justify-center mb-1">
                         <MessageCircle size={20} className="mr-2" /> {/* Ícone de WhatsApp do Lucide React */}
                         WhatsApp Loja 1
                     </a>
+                    {/* Mantido o padding vertical dos botões para py-2 */}
                     <a href="https://waze.com/ul?q=Estrada%20de%20Bel%C3%A9m%2C%20207%2C%20Encruzilhada%2C%20Recife%20-%20PE" target="_blank" className="w-full btn-waze text-center py-2 px-4 rounded-lg font-semibold text-base shadow-md inline-flex items-center justify-center">
                         <MapPin size={20} className="mr-2" /> {/* Ícone de localização do Lucide React */}
                         Ir para Loja 1
@@ -47,16 +58,20 @@ const LinkBioPage: React.FC = () => {
                 </div>
 
                 {/* Loja 2 */}
-                <div className="p-4 rounded-lg shadow-md container-card">
+                {/* Reduzido o padding do card de p-4 para p-3 */}
+                <div className="p-3 rounded-lg shadow-md store-card"> {/* Classe alterada para store-card */}
                     <h3 className="text-xl font-bold text-white mb-2 inline-flex items-center">
                         <Monitor size={24} className="mr-2" /> {/* Ícone de computador do Lucide React */}
                         Loja 2
                     </h3>
-                    <p className="text-secondary text-base mb-3">R. Córrego do Euclídes, 457 - Alto José Bonifacio, 02° andar</p>
-                    <a href="https://wa.me/5581979118912" target="_blank" className="w-full btn-whatsapp text-center py-2 px-4 rounded-lg font-semibold text-base shadow-md inline-flex items-center justify-center mb-2">
+                    {/* Reduzido o margin-bottom do endereço para mb-2 */}
+                    <p className="text-secondary text-base mb-2">R. Córrego do Euclídes, 457 - Alto José Bonifacio, 02° andar</p>
+                    {/* Mantido o padding vertical dos botões para py-2 e reduzido margin-bottom de mb-2 para mb-1 */}
+                    <a href="https://wa.me/5581979118912" target="_blank" className="w-full btn-whatsapp text-center py-2 px-4 rounded-lg font-semibold text-base shadow-md inline-flex items-center justify-center mb-1">
                         <MessageCircle size={20} className="mr-2" /> {/* Ícone de WhatsApp do Lucide React */}
                         WhatsApp Loja 2
                     </a>
+                    {/* Mantido o padding vertical dos botões para py-2 */}
                     <a href="https://waze.com/ul?q=R.%20C%C3%B3rrego%20do%20Eucl%C3%ADdes%2C%20457%2C%20Alto%20Jos%C3%A9%20Bonifacio%2C%20Recife%20-%20PE" target="_blank" className="w-full btn-waze text-center py-2 px-4 rounded-lg font-semibold text-base shadow-md inline-flex items-center justify-center">
                         <MapPin size={20} className="mr-2" /> {/* Ícone de localização do Lucide React */}
                         Ir para Loja 2
@@ -64,7 +79,8 @@ const LinkBioPage: React.FC = () => {
                 </div>
             </div>
 
-            <p className="text-secondary text-sm mt-6">Desenvolvido pela WexInfo</p>
+            {/* Reduzido o margin-top do rodapé de mt-6 para mt-4 */}
+            <p className="text-secondary text-sm mt-4">Desenvolvido pela WexInfo</p>
         </div>
     );
 };
