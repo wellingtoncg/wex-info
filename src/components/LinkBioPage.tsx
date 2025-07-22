@@ -64,7 +64,7 @@ const LinkBioPage: React.FC = () => {
                 </div>
             </div>
 
-            <p className="text-secondary text-sm mt-6">Desenvolvido com <span className="text-red-500">&hearts;</span> para WexInfo</p>
+            <p className="text-secondary text-sm mt-6">Desenvolvido pela WexInfo</p>
         </div>
     );
 };
