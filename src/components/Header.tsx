@@ -69,13 +69,13 @@ const Header = () => {
           >
             Sobre
           </button>
-          {/* <Link
+          { <Link
             to="/aluguel-impressoras"
             className="text-white hover:text-purple-400 transition"
             onClick={() => setIsMenuOpen(false)}
           >
             Aluguel de Impressoras
-    </Link> */}
+          </Link> }
           <button
             onClick={() => handleSectionClick('location')}
             className="text-white hover:text-purple-400 transition"
@@ -125,13 +125,13 @@ const Header = () => {
             >
               Sobre
             </button>
-            {/* <Link
+            { <Link
               to="/aluguel-impressoras"
               className="text-white hover:text-purple-400 py-2 transition text-left"
               onClick={() => setIsMenuOpen(false)}
             >
               Aluguel de Impressoras
-            </Link> */}
+            </Link> }
             <button
               onClick={() => handleSectionClick('location')}
               className="text-white hover:text-purple-400 py-2 transition text-left"

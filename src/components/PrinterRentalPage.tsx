@@ -7,9 +7,9 @@ import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 
 // Importe as imagens diretamente da sua nova pasta 'src/image'
-import BrotherMFC5700DW from '../image/Brother MFC-L5700DW.webp'; // Certifique-se do nome do arquivo
-import HPEcoTankL6270 from '../image/Epson EcoTank L6270.png'; // Certifique-se do nome do arquivo
-import HPLaserJetM428fdw from '../image/HP LaserJet Pro MFP M428fdw.png'; // Certifique-se do nome do arquivo
+import BrotherDCP8112DN from '../image/BrotherDCP8112DN.png'; // Certifique-se do nome do arquivo
+import BrotherDCP7065DN from '../image/BrotherDCP7065DN.png'; // Certifique-se do nome do arquivo
+import Brother5652DCP from '../image/Brother 5652 DCP L5652DN.png'; // Certifique-se do nome do arquivo
 import BrotherHL2350DW from '../image/Brother HL-L2350DW.webp'; // Certifique-se do nome do arquivo
 
 
@@ -29,29 +29,36 @@ const PrinterRentalPage = () => {
 
   const printerModels = [
     {
-      name: "Multifuncional Brother MFC-L5700DW",
-      description: "Ideal para escritórios com alto volume de impressão, oferece rapidez e economia. Impressora laser monocromática com conectividade Wi-Fi.",
-      price: "A partir de R$ 350,00/mês",
-      imageUrl: BrotherMFC5700DW // <== Usando a imagem importada
+      name: "Multifuncional Brother DCP-8112DN DUPLEX",
+      description: `Alto desempenho x baixo custo Benefício
+- 38 ppm
+- Imprime Frente e Verso
+- Rede e USB
+
+A Impressora Brother 8112 entrega alta performance com velocidade de 38 páginas por minuto e conexão de rede Ethernet, para ser compartilhada com todo escritório. Suportando até 50.000 páginas impressas por mês, a brother 8112 dá conta do recado em ambientes que exigem alta produtividade e qualidade de impressão.
+
+As cópias ou digitalizações de documentos e fotos podem ser feitas através do vidro expositor ou ainda utilizando o alimentador automático. O Alimentador automático da Brother DCP-8112DN possibilita copiar ou digitalizar até 35 páginas numa única vez sem a necessidade de colocar folha por folha.`,
+      price: "A partir de R$ 220,00/mês",
+      imageUrl: BrotherDCP8112DN // <== Usando a imagem importada
     },
     {
-      name: "Multifuncional HP LaserJet Pro MFP M428fdw",
-      description: "Compacta e eficiente, perfeita para pequenas e médias empresas. Oferece impressão, cópia, digitalização e fax.",
+      name: "Multifuncional Brother 5652 DCP L5652DN",
+      description: "A brother 5652 conta com impressão duplex, utilizando a frente e o verso da folha automaticamente, reduzindo o tempo de trabalho e gerando economia de papel. Conta com resolução máxima de 1200×1200 dpi e bandeja para papel de até 200g/m2, permitindo a impressão desde documentos mais simples, quanto material para apresentações e divulgação, que exige melhor acabamento final. Além disso a DCP L5652 trabalha com toner de alto rendimento, proporcionando um baixo custo por página.",
       price: "A partir de R$ 280,00/mês",
-      imageUrl: HPLaserJetM428fdw // <== Usando a imagem importada
+      imageUrl: Brother5652DCP // <== Usando a imagem importada
     },
     {
-      name: "Impressora Epson EcoTank L6270",
+      name: "Multifuncional Laser Mono Brother DCP-7065DN",
       description: "Solução de baixo custo por página, excelente para uso diário. Impressora tanque de tinta colorida com alimentador automático.",
       price: "A partir de R$ 220,00/mês",
-      imageUrl: HPEcoTankL6270 // <== Usando a imagem importada
-    },
+      imageUrl: BrotherDCP7065DN // <== Usando a imagem importada
+    }/*
     {
       name: "Impressora Brother HL-L2350DW",
       description: "Monocromática, rápida e ideal para grandes volumes de documentos. Design compacto para qualquer espaço.",
-      price: "A partir de R$ 180,00/mês",
+      price: "A partir de R$ 200,00/mês",
       imageUrl: BrotherHL2350DW // <== Usando a imagem importada
-    }
+    }*/
   ];
 
   return (
@@ -86,25 +93,29 @@ const PrinterRentalPage = () => {
           {/* Seção de Modelos de Impressoras */}
           <section>
             <h2 className="text-3xl font-bold text-center mb-8">Nossos Modelos Disponíveis 📄</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {printerModels.map((printer, index) => (
-                <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden p-6 text-center transition-transform transform hover:scale-105">
-                  <img
-                    src={printer.imageUrl} // <== Usando a variável da importação
-                    alt={printer.name}
-                    className="w-full h-48 object-contain mb-4 rounded-md bg-gray-700 p-2"
-                  />
-                  <h3 className="text-xl font-bold mb-2">{printer.name}</h3>
-                  <p className="text-gray-400 text-sm mb-4">{printer.description}</p>
-                  <p className="text-purple-400 text-lg font-semibold mb-4">{printer.price}</p>
-                  <a
-                    href="https://wa.me/5581985786235"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
-                  >
-                    Solicitar Orçamento 💬
-                  </a>
+                <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col justify-between p-6 text-center transition-transform transform hover:scale-105">
+                  <div>
+                    <img
+                      src={printer.imageUrl}
+                      alt={printer.name}
+                      className="w-full h-48 object-contain mb-4 rounded-md bg-gray-700 p-2"
+                    />
+                    <h3 className="text-xl font-bold mb-2">{printer.name}</h3>
+                    <p className="text-gray-400 text-sm mb-4">{printer.description}</p>
+                  </div>
+                  <div className="flex flex-col space-y-2 mt-auto"> {/* Usando 'mt-auto' para empurrar para o fundo */}
+                    <p className="text-purple-400 text-lg font-semibold mb-0">{printer.price}</p>
+                    <a
+                      href="https://wa.me/5581985786235"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-md hover:opacity-90 transition-opacity"
+                    >
+                      Solicitar Orçamento 💬
+                    </a>
+                  </div>
                 </div>
               ))}
             </div>
