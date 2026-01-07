@@ -5,14 +5,9 @@ const Contact = () => {
   // Define contact information for each store
   const contactInfo = [
     {
-      name: "Loja 1",
+      name: "Wex Info",
       whatsappLink: "https://wa.me/5581985786235",
       phoneNumber: "(81) 98578-6235"
-    },
-    {
-      name: "Loja 2",
-      whatsappLink: "https://wa.me/5581979118912",
-      phoneNumber: "(81) 97911-8912"
     }
     // Loja 3 removida, pois estava duplicada
   ];
