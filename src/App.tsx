@@ -69,7 +69,7 @@ function HomePage() {
           <Location />
           <BusinessHours />
         </div>
-        <Brands />
+        {/* <Brands />*/}
         <Contact />
       </main>
       <WhatsAppButton />
