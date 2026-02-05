@@ -25,7 +25,7 @@ const Brands = () => {
           <div className="w-16 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto"></div>
         </div>
         
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center">
+        {/*} <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center">
           {brands.map((brand, index) => (
             <div key={index} className="p-4 flex items-center justify-center">
               <img 
@@ -36,7 +36,7 @@ const Brands = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div>*/}
     </section>
   );
 };
