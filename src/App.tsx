@@ -16,6 +16,7 @@ import WhatsAppButton from './components/WhatsAppButton';
 import LinkBioPage from './components/LinkBioPage';
 import PrinterRentalPage from './components/PrinterRentalPage';
 import PrivacyPage from './pages/PrivacyPage';
+import EmpresasPage from './pages/EmpresasPage';
 
 // Componente HomePage
 function HomePage() {
@@ -70,6 +71,7 @@ export function AppRoutes() {
         <Route path="/linkbio" element={<LinkBioPage />} />
         <Route path="/aluguel-impressoras" element={<PrinterRentalPage />} />
         <Route path="/politica-de-privacidade" element={<PrivacyPage />} />
+          <Route path="/empresas" element={<EmpresasPage />} />
       </Routes>
     </div>
   );

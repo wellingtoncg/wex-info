@@ -14,7 +14,7 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Rotas a serem pré-renderizadas
-const routesToPrerender = ['/', '/aluguel-impressoras', '/politica-de-privacidade'];
+const routesToPrerender = ['/', '/aluguel-impressoras', '/politica-de-privacidade', '/empresas'];
 
 async function prerender() {
   const distDir = path.resolve(__dirname, 'dist');
