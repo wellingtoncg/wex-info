@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 
 const PrivacyPage = () => {
+  // Atualiza a canonical tag dinamicamente para esta página
+  useEffect(() => {
+    const canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    const previous = canonical?.href ?? '';
+    if (canonical) {
+      canonical.href = 'https://www.wexinfo.com.br/politica-de-privacidade';
+    }
+    return () => {
+      // Restaura a canonical original ao sair da página
+      if (canonical) canonical.href = previous;
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-900 text-gray-200">
       <div className="container mx-auto px-4 py-12 max-w-3xl">
