@@ -9,7 +9,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -29,13 +29,14 @@ async function prerender() {
   }
   const template = fs.readFileSync(templatePath, 'utf-8');
 
-  // Importa o módulo SSR buildado usando URL file:// (necessário no Windows com ESM)
+  // Importa o módulo SSR buildado usando URL file:// (compatível cross-platform)
   const serverEntryPath = path.resolve(serverDir, 'entry-server.js');
   if (!fs.existsSync(serverEntryPath)) {
     console.error('❌  dist/server/entry-server.js não encontrado. Execute vite build --ssr primeiro.');
     process.exit(1);
   }
-  const serverEntryUrl = new URL(`file:///${serverEntryPath.replace(/\\/g, '/')}`);
+  
+  const serverEntryUrl = pathToFileURL(serverEntryPath);
   const { render } = await import(serverEntryUrl.href);
 
   for (const url of routesToPrerender) {
