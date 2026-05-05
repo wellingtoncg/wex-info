@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /linkbio
+
+Sitemap: https://www.wexinfo.com.br/sitemap.xml

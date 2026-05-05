@@ -1,4 +1,6 @@
 {
+  "outputDirectory": "dist/client",
+  "buildCommand": "npm run build:ssg",
   "rewrites": [
     {
       "source": "/os",
@@ -17,8 +19,22 @@
       "destination": "https://assist-tech-rouge.vercel.app/assets/:path*"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!sitemap\\.xml|robots\\.txt|logo\\.png).*)",
       "destination": "/"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+      ]
     }
   ]
 }
